@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<!-- visible in browser window. -->
+<div id="containment">
+<!-- heading of the webpage. -->
+	<header id="header">
+		<h1>Sean J. Website</h1>
+
+		<img id="anime" src="anime.jpg" width="100" alt="my anime">
+
+		
+	</header>
+	<!-- Navigation bar with links to the other pages. -->
+	<nav id="navigate">
+		<h1>Navigation</h1>
+
+		<ul>
+			<li><a href="Assignment1_Sean_jackson.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="projects.html">Project</a></li>
+			<li><a href="c.html">Contact Me</a></li>
+
+			<li><br>
+				<video controls poster="nature.jpg" id="video">
+					<source src="hockey.mp4" type="video/mp4">
+				
+				</video>
+			</li>
+			<button onclick="VideoPlayer()">Play/Pause</button>
+		</ul>
+	</nav>
+	<!-- Contents of the page. -->
+	<div id="contents">
+		<h1>Home</h1>
+		
+
+
+	</div>
+	<!-- Webpage footer. -->
+	<footer id="footer">
+		<h1>Footer</h1>
+		<address>
+			<p><a href="mailto:us@us.com"></a></p>
+		</address>
+
+	</footer>
+		
+
+</div>
+
+
+<script>
+	var playVid=document.getElementById("video");
+	function VideoPlayer() 
+	{
+	if (playVid.paused)
+		playVid.play();
+	else
+		playVid.pause();
+	}
+</script>
+</body>
+</html>
