@@ -1,49 +1,46 @@
 @media only screen
-and (min-width:960px){
-	
+and (max-width : 480px) {
 
 body {
 	font-family: 'Shadows Into Light', cursive;
 	background: blueviolet;
-	background: -moz-linear-gradient(top, blue 0%, purple 100%);
+	background: -webkit-linear-gradient(top, blue 0%, purple 100%);
 	background: -webkit-linear-gradient(top, blue 0%, purple 100%);
 	background: -o-linear-gradient(top, blue 0%, purple 100%);
 	background: linear-gradient(to bottom, blue 0%, purple 100%);
-
+	padding: 0px;
+	margin: 0px;
 }
 
 h1 {
-	font-family: 'Calligraffitti', cursive;
+	font-family: 'Bungee Spice', cursive;
 }
 
 #containment {
-	width: 960px;
-	height: 800px;
-	margin-right: auto;
-	margin-left: auto;
+	width: 100%;
 	background-color: yellow;
 
 }
 
 #header {
-	height: 120px;
+	height: 100px;
 	background-color: yellow;
 	text-align: left;
 }
 
 #contents {
-	float: right;
+	width: 100%;
+	float: none;
 	height: 600px;
-	width: 660px;
-	background-color: skyblue;
+	background-color: lightskyblue;
 }
 
 #navigate {
-	float: left;
-	height: 600px;
-	width: 300px;
+	float: none;
+	display: block;
+	width: 100%;
 	background-color: lightblue;
-	border: 1px;
+	text-align: center;
 }
 
 #nature {
@@ -53,8 +50,10 @@ h1 {
 
 #anime {
 	float: left;
-	opacity: .7;
+	opacity: .5;
 	border-radius: 75%;
+	border: 1px;
+
 }
 
 #cartoon {
@@ -64,6 +63,7 @@ h1 {
 	border: 1px;
 
 }
+
 
 #footer {
 	height: 80px;
@@ -76,18 +76,33 @@ h1 {
 	padding: 15px;
 }
 
+#myButton {
+	color: blueviolet;
+
+}
+
 p {
 	padding: 15px;
 }
 
-h1, h2, h3, h4, h5 {
+form {
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5{
 	text-align: center;
 	font-family: 'Calligraffitti', cursive;
+
 }
 
 li {
 	list-style-type: none;
+	text-align: left;
 }
+address {
+	text-align: left;
+}
+
 
 a:hover {
 	color: red;
@@ -101,12 +116,20 @@ a:hover {
 	color: blueviolet;
 }
 
-button {
-	text-align: center;
-}
-
 video {
 	width: 200px;
 	height: 350px;
+	display: flex;
+	display: flex;
 }
+
+nav ul {
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+
+}
+
+
 }

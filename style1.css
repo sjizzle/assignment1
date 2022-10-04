@@ -1,11 +1,11 @@
 @media only screen
-and (min-width:960px){
-	
+and (min-width:481px) and (max-width:960px) {
+
 
 body {
 	font-family: 'Shadows Into Light', cursive;
 	background: blueviolet;
-	background: -moz-linear-gradient(top, blue 0%, purple 100%);
+	background: -webkit-linear-gradient(top, blue 0%, purple 100%);
 	background: -webkit-linear-gradient(top, blue 0%, purple 100%);
 	background: -o-linear-gradient(top, blue 0%, purple 100%);
 	background: linear-gradient(to bottom, blue 0%, purple 100%);
@@ -13,11 +13,11 @@ body {
 }
 
 h1 {
-	font-family: 'Calligraffitti', cursive;
+	font-family: 'Bungee Spice', cursive;
 }
 
 #containment {
-	width: 960px;
+	width: 100%;
 	height: 800px;
 	margin-right: auto;
 	margin-left: auto;
@@ -26,24 +26,22 @@ h1 {
 }
 
 #header {
-	height: 120px;
+	height: 80px;
 	background-color: yellow;
 	text-align: left;
 }
 
 #contents {
-	float: right;
-	height: 600px;
-	width: 660px;
+	float: none;
+	height: 800px;
 	background-color: skyblue;
 }
 
 #navigate {
-	float: left;
-	height: 600px;
-	width: 300px;
+	float: none;
+	height: 100px;
 	background-color: lightblue;
-	border: 1px;
+	text-align: center;
 }
 
 #nature {
@@ -53,17 +51,20 @@ h1 {
 
 #anime {
 	float: left;
-	opacity: .7;
-	border-radius: 75%;
-}
-
-#cartoon {
-	float: left;
-	opacity: .7;
+	opacity: .9;
 	border-radius: 75%;
 	border: 1px;
 
 }
+
+#cartoon {
+	float: left;
+	opacity: .9;
+	border-radius: 75%;
+	border: 1px;
+
+}
+
 
 #footer {
 	height: 80px;
@@ -76,17 +77,31 @@ h1 {
 	padding: 15px;
 }
 
+#myButton {
+	color: blueviolet;
+
+}
+
 p {
 	padding: 15px;
 }
 
 h1, h2, h3, h4, h5 {
+
 	text-align: center;
 	font-family: 'Calligraffitti', cursive;
 }
 
 li {
 	list-style-type: none;
+	text-align: left;
+}
+address {
+	text-align: left;
+}
+
+aside {
+	float: left;
 }
 
 a:hover {
@@ -101,12 +116,30 @@ a:hover {
 	color: blueviolet;
 }
 
-button {
-	text-align: center;
-}
-
 video {
 	width: 200px;
 	height: 350px;
 }
+
+nav ul {
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+
+}
+
+nav li {
+	
+	margin: 1em;
+}
+
+nav a {
+	
+}
+
+nav a:hover {
+	
+}
+
 }
