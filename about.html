@@ -1,62 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>About Me</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Calligraffitti&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css" media="only screen and (max-width:960px)">
+	<link href="style1.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+	<link href="style2.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
 </head>
-
-
 <body>
-
-<!-- visible in browser window. -->
+<!-- div holding all the code -->
 <div id="containment">
-<!-- heading of the webpage. -->
+<img id="anime" src="anime.jpg" width="100" alt="my anime">
+	<!-- Header  -->
 	<header id="header">
 		<h1>Sean J. Website</h1>
 
-		<img id="anime" src="anime.jpg" width="100" alt="my anime">
 		
 	</header>
-	<!-- Navigation bar with links to the other pages. -->
+	<!-- Navigation for links and video-->
 	<nav id="navigate">
-		<h1>Navigation</h1>
+		<h3>Navigation</h3>
+
 		<ul>
-			<li><a href="Assignment1_Sean_jackson.html">Home</li></a>
-			<li><a href="about.html">About Me</li></a>
-			<li><a href="projects.html">Project</li></a>
-			<li><a href="c.html">Contact Me</li></a>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="AboutMe.html">About Me</a></li>
+			<li><a href="project.html">Project</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
 
 		</ul>
+		
 	</nav>
-	<!-- Contents of the page. -->
-	<div id="contents">
-		<h1>About Me</h1>
-		<img  id="nature" src="nature.jpg" height="350" width="200"> 
+	
+<!-- Div Contents holds main content -->
+<div id="contents">
+		<h2>About Me</h2>
 
 
-		<article id="me"> My name is Sean Jackson. I am a healthcare worker and career changer. Prior to the pandemic,
-		I bridged to a bachelors of commerce at Ontario Tech university from Durham College to educate myself further and progress my career.<br> 
-
-		<br>After one semester, we had the lockdown partially through the second semester. Fortunately, I kept myself busy between work and school. I applied into to a business technology management and I was accepted. While I did well in my business courses, my grades were much better in my IT courses. I was naive thinking about a pivoting from a general business degree. The pandemic taught me that this was a complete career change.
-
-		Last summer, I decided to apply into the Technology Management bachelors of IT. I looking forward to graduating and entering the tech world ASAP.
-
-		</article>
-
+		<video id="video" class="myVid" controls poster="nature1.jpg">
+			<source src="hockey.mp4" type="video/mp4">
+				
+		</video>
 		
-	</div>
-	<!-- Webpage footer. -->
-	<footer id="footer">
-		<h1>Footer</h1>
 
-	</footer>
-		
+		<br>
+		<button id="myButton" onclick="VideoPlayer()">Play/Pause</button>
+
+
+		<p id="me"> My name is Sean Jackson. I am a healthcare worker. I bridged to a bachelors of commerce at Ontario Tech University from Durham College to educate myself further. Last summer, I applied into the Technology Management bachelors of IT and I got accepted. I looking forward to graduating and entering the tech world.
+
+		</p>
+
 
 </div>
+<!-- Footer code, address, and email link-->
+<footer id="footer">
+
+	<address>
+	<p><img id="cartoon" src="cartoon.jpg" width="40" alt="my anime">Contact at: <a href="mailto:sean.jackson@ontariotechu.net">sean.jackson@ontariotechu.net</a><br> © by S.J.</p>
+	</address>
+</footer>
+</div>
+<script>
+	var playVid=document.getElementById("video");
+	function VideoPlayer() 
+	{
+	if (playVid.paused)
+		playVid.play();
+	else
+		playVid.pause();
+	}
+</script>
 </body>
 </html>
